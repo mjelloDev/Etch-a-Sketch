@@ -9,6 +9,10 @@ header.appendChild(h1);
 //Create 16x16 div element with grid class
 const gridCanvas = 16 * 16;
 for (let i = 0; i < gridCanvas; i++) {
+  createGrid();
+}
+
+function createGrid() {
   const grid = document.createElement("div");
   grid.classList.add("grid");
   container.appendChild(grid);
