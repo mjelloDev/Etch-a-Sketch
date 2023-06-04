@@ -16,9 +16,15 @@
     <div class="flex-container">
       <div class="canvas" id="gridContainer"></div>
       <div class="buttons">
-        <button type="button" class="btn">Black</button>
-        <button type="button" class="btn">Eraser</button>
-        <button type="button" class="btn">Rainbow</button>
+        <button type="button" class="btn" onclick="changeColor('black')">
+          Black
+        </button>
+        <button type="button" class="btn" onclick="changeColor('white')">
+          Eraser
+        </button>
+        <button type="button" class="btn" onclick="changeColor('random')">
+          Rainbow
+        </button>
         <button type="button" class="btn" onclick="resetGrid()">Reset</button>
       </div>
       <div>

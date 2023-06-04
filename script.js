@@ -26,6 +26,7 @@ function createGrid() {
     for (let j = 0; j < gridSize; j++) {
       let gridCell = document.createElement("div");
       gridCell.classList.add("cell");
+      gridCell.addEventListener("mouseover", colorChoice);
       gridContainer.appendChild(gridCell);
     }
   }
@@ -34,4 +35,18 @@ function createGrid() {
 function resetGrid() {
   let gridContainer = document.getElementById("gridContainer");
   gridContainer.innerHTML = "";
+}
+
+// onclick function to choose color
+let color = "black";
+function colorChoice() {
+  if (color === "random") {
+    this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+  } else {
+    this.style.backgroundColor = color;
+  }
+}
+
+function changeColor(choice) {
+  color = choice;
 }
