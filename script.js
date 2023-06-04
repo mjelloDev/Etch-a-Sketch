@@ -6,6 +6,12 @@ function createGrid() {
   //Determine the size of the canvas
   let gridSize = parseInt(document.getElementById("gridSizeInput").value);
 
+  //Validate gridSize input value
+  if (gridSize < 2 || gridSize > 100) {
+    alert("Please enter between 2 and 100");
+    return; // ==> to exit the function if the number is not within the specified range
+  }
+
   //Clear existing grid
   let gridContainer = document.getElementById("gridContainer");
   gridContainer.innerHTML = "";
