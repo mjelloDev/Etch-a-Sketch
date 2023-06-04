@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  color: #f1fbff;
 }
 
 *,
@@ -10,37 +9,30 @@
 *::after {
   box-sizing: border-box;
 }
-
-/*-------------  CSS Reset -------------*/
-
-body {
-  background-color: #222b33;
-}
-
-.container {
-  margin: 5em auto;
-  display: flex;
-  flex-wrap: wrap;
-  /* max-height: 500px; */
-  /* max-width: 400px; */
-  justify-content: center;
-  align-items: center;
-  color: #254358;
-  width: 400px;
-  height: auto;
-}
-
-.grid {
-  width: 25px;
-  height: 25px;
-  border: 1px solid #ffeccc;
-}
+/*-------------  HEADERS -------------*/
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 2em auto;
+}
+
+/*-------------  MAIN -------------*/
+
+body {
+  background-color: #f5f6f7;
+}
+
+#gridContainer {
+  border: 1px solid black;
+  width: 400px; /* Set the desired width of the grid container */
+  height: 400px; /* Set the desired height of the grid container */
+}
+
+.cell {
+  border: 1px solid gray;
 }
 
 /*-------------  FOOTER -------------*/

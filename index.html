@@ -5,13 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
     <title>Etch-a-Sketch</title>
   </head>
 
   <body>
-    <header class="header"></header>
-    <div class="container"></div>
-    <script src="script.js"></script>
+    <header class="header">
+      <h1>Etch a Sketch</h1>
+    </header>
+    <div class="flex-container">
+      <div class="canvas" id="gridContainer"></div>
+      <div class="buttons">
+        <button type="button" class="btn">Black</button>
+        <button type="button" class="btn">Eraser</button>
+        <button type="button" class="btn">Rainbow</button>
+        <button type="button" class="btn" onclick="resetGrid()">Reset</button>
+      </div>
+      <div>
+        <input type="number" id="gridSizeInput" placeholder="Enter grid size" />
+        <button onclick="createGrid()">Create Grid</button>
+      </div>
+    </div>
   </body>
 
   <footer class="footer">
