@@ -27,14 +27,34 @@ body {
 
 #gridContainer {
   border: 5px solid black;
-  width: 400px; /* Set the desired width of the grid container */
-  height: 400px; /* Set the desired height of the grid container */
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
 }
 
 .cell {
   border: 1px solid gray;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons button,
+.buttons input[type="number"],
+.buttons button[type="button"] {
+  padding: 5px 10px;
+}
 /*-------------  FOOTER -------------*/
 
 .footer {
