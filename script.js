@@ -1,7 +1,6 @@
 const header = document.querySelector("header");
 const container = document.querySelector(".flex-container");
-const canvas = document.querySelector(".canvas");
-// let isMouseDown = false;
+
 
 function createGrid() {
   //Determine the size of the canvas
@@ -44,18 +43,6 @@ function resetGrid() {
   let gridContainer = document.getElementById("gridContainer");
   gridContainer.innerHTML = "";
 }
-
-// onclick function to choose color
-// let color = "black";
-// function colorChoice() {
-//   if (isMouseDown) {
-//     if (color === "random") {
-//       this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-//     } else {
-//       this.style.backgroundColor = color;
-//     }
-//   }
-// }
 
 let color = "black";
 function colorChoice() {
